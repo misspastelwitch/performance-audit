@@ -30,5 +30,8 @@ Ik heb de site van DOA als eerste getest. De site is een home page voor het stic
 ![image](https://github.com/user-attachments/assets/1c288d23-1df4-47a6-abce-26439f67a0a7)
 
 ## Samenvatting
-De testbevindingen zijn goed, behalve de Total Blocking Time. 
+De testbevindingen zijn goed, behalve de Total Blocking Time. De javascript duurt ook lang om in te laden, vooral die van visualwebsiteoptimizer.com. Er is ook een image die veel later is ingeladen, van 2. doamsterdam.nl. 
+Er is ook een hele grote CPU spike van de script parsing en layout setup van 29. ct.pinterest.com aan het einde van het laden van de pagina.
+Zoals verwacht is de meest van de bandwidth gebruikt aan het begin van het renderen, met een spike bij het laden van de javascript van gstatic.com.
+De browser Main Thread en Long Tasks zijn bijna hetzelfde, met een grote spike bij het laden van 14, 15, 16, 17, 18 en 19. Dit betekend dat de CPU misschien een block is voor het laden van de rest van de pagina.
 
